@@ -161,3 +161,7 @@ input:focus, textarea:focus, select:focus{
     /* background-color: lightseagreen; */
     /* float: right; */
   }
+
+  .completed {
+    text-decoration: line-through
+  }

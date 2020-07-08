@@ -9,48 +9,61 @@ import { FormsModule } from '@angular/forms';
 export class AppComponent {
   title = 'To Do'
   // toDoEntry = ' '
-  todo: object[];
+  todos: todo[];
   todoTitle: string; 
-  completed: boolean = true;
+  // todo.completed: boolean = true;
 
 
   // constructor () {}
 
   ngOnInit() {
     this.todoTitle = '';
-    this.todo = [
+    this.todos = [
       {
        'id': 1, 
        'item': 'Fold Clothes',
        'completed': true,
+       'todo': false,
       },
       {
         'id': 1, 
         'item': 'Put clothes in Dresser',
         'completed': false,
+        'todo': true,
        },
        {
         'id': 1, 
         'item': 'Relax',
         'completed': false,
+        'todo': true,
        },
        {
         'id': 1, 
         'item': 'Try To Pet Cat',
         'completed': false,
+        'todo': true,
        },
        {
         'id': 1, 
         'item': 'Pet Dog',
         'completed': true,
+        'todo': false,
        },
        {
         'id': 1, 
         'item': 'Be Awesome',
         'completed': true,
+        'todo': false,
        },
       ]
   }
 
+}
+
+interface todo {
+  id: number;
+  item: string; 
+  completed: boolean;
+  todo: boolean
 }
 
