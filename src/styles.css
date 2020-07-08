@@ -139,13 +139,14 @@ input:focus, textarea:focus, select:focus{
     /* flex-direction: column; */
   }
 
-  /* .todo-title {
-    display: flex;
+  .todo-title {
+    /* display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
-    background-color: lightblue;
-  } */
+    align-items: flex-start; */
+    flex-grow: 1;
+    /* background-color: lightblue; */
+  }
 
   .todo-complete {
     visibility: visible;

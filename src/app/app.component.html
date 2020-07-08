@@ -6,7 +6,7 @@
 <div class="todo-container">
 <div class="todo-item" *ngFor="let todo of todos">
     <div  class="todo-complete">
-    <i *ngIf="todo.completed" class="material-icons" style="color:green">done</i>
+    <i *ngIf="!todo.completed" class="material-icons" style="color:green">done</i>
     </div>
     <div class="todo-title">
     <p [ngClass]="{completed:todo.completed}">{{ todo.item }}</p>
