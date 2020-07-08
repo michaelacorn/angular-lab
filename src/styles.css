@@ -137,6 +137,8 @@ input:focus, textarea:focus, select:focus{
     /* flex-direction: row; */
     /* background-color: lightpink; */
     /* flex-direction: column; */
+    /* border: solid black 2px; */
+    align-items: center;
   }
 
   .todo-title {
