@@ -1,1 +1,163 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: #70bg32;
+    background-repeat:no-repeat;
+    background: -webkit-linear-gradient( to left top, #D70270, #734F96, #0038A8);
+    background: -moz-linear-gradient( to left top, #D70270, #734F96, #0038A8);
+    background: -ms-linear-gradient( to left top, #D70270, #734F96, #0038A8);
+    background: -o-linear-gradient( to left top, #D70270, #734F96, #0038A8);
+    background: linear-gradient( to left top, #D70270, #734F96, #0038A8);
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    margin: 50px;
+    border: solid 2px lightslategrey;
+    border-radius: 10px;
+    box-shadow: 10px 9px 42px -2px rgba(0,0,0,0.79);
+}
+
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px; 
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    cursor: pointer;
+}
+
+.material-icons:hover,
+.material-icons:focus {
+    opacity: 0.2;
+    transition: 0.4s;
+}
+
+.material-icons:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+.material-icons:active {
+    transform: scale(0.99);
+}
+
+button {
+    display: inline-block;
+    border: none;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #D70270;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-top: 25px;
+}
+
+button:hover,
+button:focus {
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+button:focus {
+    outline: none;
+    
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+input {
+    font-size: x-large;
+    border: solid 1px  lightgrey ;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* li {
+    display: flex;
+    justify-content: space-between;
+} */
+
+h1 {
+    font-weight: ;
+}
+
+h3 {
+    font-weight: 100;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+
+.todo-container {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: magenta; */
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.todo-item {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    /* flex-direction: row; */
+    /* background-color: lightpink; */
+    /* flex-direction: column; */
+  }
+
+  /* .todo-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: lightblue;
+  } */
+
+  .todo-complete {
+    visibility: visible;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* background-color: lightgreen; */
+  }
+  
+  .todo-remove {
+    /* display: flex; */
+    /* flex-direction: row;
+    justify-content: flex-end; */
+    /* background-color: lightseagreen; */
+    /* float: right; */
+  }
