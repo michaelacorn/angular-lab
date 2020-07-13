@@ -1,33 +1,26 @@
 <div class="container"><h1>To Do List</h1>
 <h3>A place to store your to-do's.</h3>
-<input type="text" placeholder="Filter your to-do's">
+<!-- <div> -->
+<input type="text" placeholder="Filter your to-do's" [(ngModel)]="titleFilter" >
+<!-- </div> -->
 
 
 <div class="todo-container">
-<div class="todo-item" *ngFor="let todo of todos">
+<div class="todo-item" *ngFor="let todo of todos | filter: titleFilter ; index as index">
     <div  class="todo-complete">
-    <i *ngIf="!todo.completed" class="material-icons" style="color:green">done</i>
+    <i *ngIf="!todo.completed" class="material-icons" style="color:green" (click)="completeTask(index)">done</i>
     </div>
     <div class="todo-title">
     <p [ngClass]="{completed:todo.completed}">{{ todo.item }}</p>
     </div>
-    <div class="todo-remove">  <i class="material-icons" style="color:red">delete</i>
+    <div class="todo-remove">  <i (click)="removeTask(index)" class="material-icons" style="color:red">delete</i>
     </div>
 </div>
 </div> 
 
 
-<input placeholder="Add a to-do" type="text">
-<button>Add</button>
+<!-- <i class="material-icons" style="color:lightgrey">add</i>-->
+<input placeholder="Add a to-do" type="text" [(ngModel)]="todoTitle" (keyup.enter)="addTask()" >
+<button (click)="addTask()">Add</button>
 </div>
 
-<!-- For reference later -styling inline -->
-
-<!--<ol>
-   <li><i class="material-icons" style="color:green">done</i>Test<i class="material-icons" style="color:red">delete</i></li>
-    <li>Test<i class="material-icons" style="color:red">delete</i></li>
-    <li>Test<i class="material-icons" style="color:red">delete</i></li>
-    <li>Test<i class="material-icons" style="color:red">delete</i></li>
-    <li>Test<i class="material-icons" style="color:red">delete</i></li>
-    <li style="text-decoration:line-through;">Test<i class="material-icons" style="color:red">delete</i></li>
-</ol>-->

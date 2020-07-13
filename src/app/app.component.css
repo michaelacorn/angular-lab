@@ -1,0 +1,48 @@
+input {
+    font-size: x-large;
+    border: solid 0px  lightgrey ;
+    border-bottom: solid 2px  lightgrey ;;
+    padding: 10px;
+}
+
+
+
+h1 {
+    font-weight: ;
+}
+
+h3 {
+    font-weight: 100;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+
+.todo-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .todo-title {
+    flex-grow: 1;
+  }
+
+  /* .todo-complete {
+  }
+  
+  .todo-remove {
+  } */
+
+  .completed {
+    text-decoration: line-through
+  }

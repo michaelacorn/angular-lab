@@ -97,17 +97,13 @@ button:active {
     transform: scale(0.99);
 }
 
-input {
+/* input {
     font-size: x-large;
     border: solid 1px  lightgrey ;
     border-radius: 10px;
     padding: 10px;
 }
 
-/* li {
-    display: flex;
-    justify-content: space-between;
-} */
 
 h1 {
     font-weight: ;
@@ -125,46 +121,26 @@ input:focus, textarea:focus, select:focus{
 .todo-container {
     display: flex;
     justify-content: space-between;
-    /* background-color: magenta; */
     flex-direction: column;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 .todo-item {
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-between;
-    /* flex-direction: row; */
-    /* background-color: lightpink; */
-    /* flex-direction: column; */
-    /* border: solid black 2px; */
     align-items: center;
   }
 
   .todo-title {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start; */
     flex-grow: 1;
-    /* background-color: lightblue; */
   }
 
   .todo-complete {
-    visibility: visible;
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* background-color: lightgreen; */
   }
   
   .todo-remove {
-    /* display: flex; */
-    /* flex-direction: row;
-    justify-content: flex-end; */
-    /* background-color: lightseagreen; */
-    /* float: right; */
   }
 
   .completed {
     text-decoration: line-through
-  }
+  } */
